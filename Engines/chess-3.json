@@ -7,7 +7,7 @@
         "path"      : "",
         "compilers" : ["go"],
         "cpuflags"  : [],
-        "systems"   : ["Windows", "Linux", "Darwin"]
+        "systems"   : ["Windows", "Linux", "Darwin", "OpenBSD"]
     },
 
     "test_presets" : {
