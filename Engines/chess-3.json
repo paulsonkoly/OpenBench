@@ -6,7 +6,7 @@
     "build" : {
         "path"      : "",
         "compilers" : ["go"],
-        "cpuflags"  : [""],
+        "cpuflags"  : [],
         "systems"   : ["Windows", "Linux", "Darwin"]
     },
 
