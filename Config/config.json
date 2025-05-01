@@ -24,6 +24,7 @@
     ],
 
     "engines" : [
-      "chess-3"
+      "chess-3",
+      "stash"
     ]
 }

@@ -22,25 +22,25 @@
         },
 
         "STC" : {
-            "both_options"      : "Threads=1 Hash=8",
+            "both_options"      : "Threads=1 Hash=4",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32
         },
 
         "LTC" : {
-            "both_options"      : "Threads=1 Hash=64",
+            "both_options"      : "Threads=1 Hash=8",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 8
         },
 
         "SMP STC" : {
-            "both_options"      : "Threads=8 Hash=64",
+            "both_options"      : "Threads=1 Hash=8",
             "both_time_control" : "5.0+0.05",
             "workload_size"     : 64
         },
 
         "SMP LTC" : {
-            "both_options"      : "Threads=8 Hash=256",
+            "both_options"      : "Threads=1 Hash=8",
             "both_time_control" : "20.0+0.2",
             "workload_size"     : 16
         }
