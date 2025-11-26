@@ -22,7 +22,7 @@
         },
 
         "STC" : {
-            "both_options"      : "Threads=1 Hash=4",
+            "both_options"      : "Threads=1 Hash=1",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32
         },
