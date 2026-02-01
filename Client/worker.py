@@ -76,6 +76,10 @@ class Configuration:
     ## arguments provided. Lastly, a Configuration() object holds the Workload
 
     def __init__(self, args):
+        logical = psutil.cpu_count(logical=True)  # always returns int
+        physical = psutil.cpu_count(logical=False)
+        if physical is None:
+                physical = logical  # fallback if unknown
 
         # Basic init of every piece of System specific information
         self.compilers      = {}
@@ -86,8 +90,8 @@ class Configuration:
         self.os_ver         = platform.release()
         self.python_ver     = platform.python_version()
         self.mac_address    = hex(uuid.getnode()).upper()[2:]
-        self.logical_cores  = psutil.cpu_count(logical=True)
-        self.physical_cores = psutil.cpu_count(logical=False)
+        self.logical_cores  = logical
+        self.physical_cores = physical
         self.ram_total_mb   = psutil.virtual_memory().total // (1024 ** 2)
         self.machine_name   = 'None'
         self.machine_id     = 'None'
