@@ -29,6 +29,7 @@
 
     "engines" : [
       "chess-3",
-      "Stash"
+      "Stash",
+      "Stockfish"
     ]
 }
